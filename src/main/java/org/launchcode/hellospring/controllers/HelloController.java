@@ -39,6 +39,13 @@ public class HelloController {
                     "<body>" +
                          "<form action='v1' method='post'>" +
                             "<input placeholder=\"search\" name='name' />" +
+//                "<label for=\"lang-select\">" + "Choose a Language:" + "</label>" +
+                "<select name=\"Language\">" +
+    "<option value=\"\">" + "Select Language" + "</option>" +
+    "<option value=\"english\">" + "english" + "</option>" +
+    "<option value=\"french\">" + "french" + "</option>" +
+    "<option value=\"spanish\">" + "spanish" + "</option>" +
+"</select>" +
                              "<button>" +
                               "search" +
                                 "</button>" +
@@ -46,4 +53,5 @@ public class HelloController {
                     "</body>" +
                 "</html>";
     }
+
 }
