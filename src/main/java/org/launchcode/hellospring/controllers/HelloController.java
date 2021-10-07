@@ -40,6 +40,7 @@ public class HelloController {
 
     @GetMapping("form")
     public String form(){
+<<<<<<< HEAD
         return "form";
     }
 
@@ -52,5 +53,25 @@ public class HelloController {
         model.addAttribute("names", namesArr);
 
         return "hello-list";
+=======
+        return "<html>" +
+                    "<body>" +
+                         "<form action='v1' method='post'>" +
+                            "<input placeholder=\"search\" name='name' />" +
+//                "<label for=\"lang-select\">" + "Choose a Language:" + "</label>" +
+                "<select name=\"Language\">" +
+    "<option value=\"\">" + "Select Language" + "</option>" +
+    "<option value=\"english\">" + "english" + "</option>" +
+    "<option value=\"french\">" + "french" + "</option>" +
+    "<option value=\"spanish\">" + "spanish" + "</option>" +
+"</select>" +
+                             "<button>" +
+                              "search" +
+                                "</button>" +
+                         "</form>"+
+                    "</body>" +
+                "</html>";
+>>>>>>> cd59b964a1035ae07d01d51a38db349e695a4877
     }
+
 }
